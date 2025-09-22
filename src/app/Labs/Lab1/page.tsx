@@ -84,13 +84,82 @@ export default function Lab1() {
         </ul>
       </div>
 
-      {/* Table */}
-      <div id="wd-tables" className="mb-6">
-        <h4>Table Tag</h4>
-        <table className="border border-black w-full text-left">
-          {/* ... keep table as you already have it ... */}
-        </table>
-      </div>
+     <div id="wd-tables">
+  <h4>Table Tag</h4>
+  <table border={1} width="100%">
+    <thead>
+      <tr>
+        <th>Quiz</th>
+        <th>Topic</th>
+        <th>Date</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Q1</td>
+        <td>HTML</td>
+        <td>10/2/25</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <td>Q2</td>
+        <td>CSS</td>
+        <td>10/5/25</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>Q3</td>
+        <td>NodeJS</td>
+        <td>10/8/25</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Q4</td>
+        <td>NextJS</td>
+        <td>10/10/25</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>Q5</td>
+        <td>Javascript</td>
+        <td>10/12/25</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <td>Q6</td>
+        <td>Bootstrap</td>
+        <td>10/15/25</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>Q7</td>
+        <td>MongoDB</td>
+        <td>10/17/25</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Q8</td>
+        <td>Git</td>
+        <td>10/19/25</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Q9</td>
+        <td>VSCode</td>
+        <td>10/22/25</td>
+        <td>89</td>
+      </tr>
+      <tr>
+        <td>Q10</td>
+        <td>SQL</td>
+        <td>10/25/25</td>
+        <td>92</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
       {/* Images */}
       <div id="wd-images" className="mb-6">
