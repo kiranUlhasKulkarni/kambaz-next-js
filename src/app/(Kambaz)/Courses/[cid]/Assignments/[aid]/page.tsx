@@ -1,9 +1,10 @@
 export default async function AssignmentEditor({
   params,
 }: {
-  params: Promise<{aid: string }>;
+  params: Promise<{ aid: string }>;
 }) {
-  const { aid } = await params;
+  // Rename to _aid to remove unused variable warning
+  const { aid: _aid } = await params;
 
   return (
     <div id="wd-assignments-editor">
@@ -94,7 +95,6 @@ export default async function AssignmentEditor({
       </table>
 
       <br />
-      
       <button id="wd-cancel-btn">Cancel</button>
       <button id="wd-save-btn">Save</button>
     </div>
