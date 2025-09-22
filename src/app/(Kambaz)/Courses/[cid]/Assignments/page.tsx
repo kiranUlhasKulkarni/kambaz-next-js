@@ -84,7 +84,7 @@ export default function Assignments() {
       <ul id="wd-project-list">
         <li className="wd-project-list-item">
           <Link
-            href="/Courses"
+            href="/Courses/1234/Quizzes"
             className="wd-project-link"
           >
             Final Project - Portfolio Website
