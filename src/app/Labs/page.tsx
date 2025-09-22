@@ -3,7 +3,7 @@ export default function Labs() {
  return (
    <div id="wd-labs">
      <h1>Labs</h1>
-           <p id="wd-student-name">Kiran Ulhas Kulkarni</p>
+           <p id="wd-student-name">Kiran Ulhas Kulkarni section 4</p>
 
      <ul>
        <li>
