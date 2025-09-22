@@ -3,7 +3,6 @@ export default async function AssignmentEditor({
 }: {
   params: Promise<{ aid: string }>;
 }) {
-  // Rename to _aid to remove unused variable warning
   const { aid: _aid } = await params;
 
   return (
@@ -12,8 +11,8 @@ export default async function AssignmentEditor({
       <input id="wd-name" defaultValue="A1 - ENV + HTML" />
       <br /><br />
 
-      <textarea id="wd-assignment-description" rows={5} cols={50}>
-        The assignment is available online Submit a link to the landing page of
+      <textarea id="wd-assignment-description" rows={5} cols={100}>
+        The assignment is available online Submit a link to the landing page of your Web Application running.
       </textarea>
 
       <br /><br />
@@ -24,7 +23,7 @@ export default async function AssignmentEditor({
               <label htmlFor="wd-points">Points</label>
             </td>
             <td>
-              <input id="wd-points" defaultValue={100} />
+              <input id="wd-points" type="number" defaultValue={100} min={0} max={100} step={1} />
             </td>
           </tr>
 
