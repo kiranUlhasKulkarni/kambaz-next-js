@@ -6,7 +6,6 @@ export default function Lab1() {
       <h2 className="text-2xl font-bold mb-4">Lab 1</h2>
       <h3 className="text-xl font-semibold mb-3">HTML Examples</h3>
 
-      {/* Headings */}
       <div id="wd-h-tag" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Heading Tags</h4>
         <p>
@@ -24,7 +23,6 @@ export default function Lab1() {
         </p>
       </div>
 
-      {/* Paragraphs */}
       <div id="wd-p-tag" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Paragraph Tag</h4>
         <p id="wd-p-1" className="mb-2">
@@ -42,7 +40,6 @@ export default function Lab1() {
         </p>
       </div>
 
-      {/* Lists */}
       <div id="wd-lists" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">List Tags</h4>
 
@@ -161,7 +158,6 @@ export default function Lab1() {
 </div>
 
 
-      {/* Images */}
       <div id="wd-images" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Image Tag</h4>
         <p>Loading an image from the internet:</p>
@@ -182,7 +178,6 @@ export default function Lab1() {
         />
       </div>
 
-      {/* Forms */}
       <div id="wd-forms" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Form Elements</h4>
         <form id="wd-text-fields" className="space-y-3">
