@@ -6,6 +6,7 @@ export default function Lab1() {
       <h2 className="text-2xl font-bold mb-4">Lab 1</h2>
       <h3 className="text-xl font-semibold mb-3">HTML Examples</h3>
 
+      {/* Headings */}
       <div id="wd-h-tag" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Heading Tags</h4>
         <p>
@@ -23,6 +24,7 @@ export default function Lab1() {
         </p>
       </div>
 
+      {/* Paragraphs */}
       <div id="wd-p-tag" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Paragraph Tag</h4>
         <p id="wd-p-1" className="mb-2">
@@ -40,6 +42,7 @@ export default function Lab1() {
         </p>
       </div>
 
+      {/* Lists */}
       <div id="wd-lists" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">List Tags</h4>
 
@@ -81,83 +84,90 @@ export default function Lab1() {
         </ul>
       </div>
 
-     <div id="wd-tables">
-  <h4>Table Tag</h4>
-  <table border={1} width="100%">
-    <thead>
-      <tr>
-        <th>Quiz</th>
-        <th>Topic</th>
-        <th>Date</th>
-        <th>Grade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Q1</td>
-        <td>HTML</td>
-        <td>10/2/25</td>
-        <td>87</td>
-      </tr>
-      <tr>
-        <td>Q2</td>
-        <td>CSS</td>
-        <td>10/5/25</td>
-        <td>92</td>
-      </tr>
-      <tr>
-        <td>Q3</td>
-        <td>NodeJS</td>
-        <td>10/8/25</td>
-        <td>88</td>
-      </tr>
-      <tr>
-        <td>Q4</td>
-        <td>NextJS</td>
-        <td>10/10/25</td>
-        <td>91</td>
-      </tr>
-      <tr>
-        <td>Q5</td>
-        <td>Javascript</td>
-        <td>10/12/25</td>
-        <td>89</td>
-      </tr>
-      <tr>
-        <td>Q6</td>
-        <td>Bootstrap</td>
-        <td>10/15/25</td>
-        <td>93</td>
-      </tr>
-      <tr>
-        <td>Q7</td>
-        <td>MongoDB</td>
-        <td>10/17/25</td>
-        <td>90</td>
-      </tr>
-      <tr>
-        <td>Q8</td>
-        <td>Git</td>
-        <td>10/19/25</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>Q9</td>
-        <td>VSCode</td>
-        <td>10/22/25</td>
-        <td>89</td>
-      </tr>
-      <tr>
-        <td>Q10</td>
-        <td>SQL</td>
-        <td>10/25/25</td>
-        <td>92</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      {/* Table */}
+            <div id="wd-tables">
+        <h4>Table Tag</h4>
+        <table border={1} width="100%">
+          <thead>
+            <tr>
+              <th>Quiz</th>
+              <th>Topic</th>
+              <th>Date</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Q1</td>
+              <td>HTML</td>
+              <td>2/3/21</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Q2</td>
+              <td>CSS</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q3</td>
+              <td>NodeJS</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q4</td>
+              <td>NextJS</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q5</td>
+              <td>Javascript</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q6</td>
+              <td>Bootstrap</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q7</td>
+              <td>MongoDB</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q8</td>
+              <td>Git</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q9</td>
+              <td>VSCode</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Q10</td>
+              <td>SQL</td>
+              <td>2/10/21</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colSpan={3}>Average</td>
+              <td>90</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
 
-
+      {/* Images */}
       <div id="wd-images" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Image Tag</h4>
         <p>Loading an image from the internet:</p>
@@ -178,6 +188,7 @@ export default function Lab1() {
         />
       </div>
 
+      {/* Forms */}
       <div id="wd-forms" className="mb-6">
         <h4 className="text-lg font-semibold mb-2">Form Elements</h4>
         <form id="wd-text-fields" className="space-y-3">
@@ -328,9 +339,8 @@ export default function Lab1() {
 Please
 <a href="https://www.lipsum.com" id="wd-lipsum"> click here </a>
 to get dummy text<br/>
- <a href="https://github.com/kiranUlhasKulkarni/kambaz-next-js" id="wd-github" target="_blank" rel="noopener noreferrer">
-            Kambaz Source on GitHub
-          </a>
+<a href="https://github.com/kiranUlhasKulkarni/kambaz-next-js" id="wd-lipsum"> Kambaz Repo </a>
+to get Kambax github Repository<br/>
     </div>
   );
 }

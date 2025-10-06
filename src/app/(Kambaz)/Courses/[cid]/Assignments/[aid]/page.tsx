@@ -1,9 +1,9 @@
 export default async function AssignmentEditor({
   params,
 }: {
-  params: Promise<{ aid: string }>;
+  params: Promise<{aid: string }>;
 }) {
-  const { aid: _aid } = await params;
+  const { aid } = await params;
 
   return (
     <div id="wd-assignments-editor">
@@ -11,8 +11,8 @@ export default async function AssignmentEditor({
       <input id="wd-name" defaultValue="A1 - ENV + HTML" />
       <br /><br />
 
-      <textarea id="wd-assignment-description" rows={5} cols={100}>
-        The assignment is available online Submit a link to the landing page of your Web Application running.
+      <textarea id="wd-assignment-description" rows={5} cols={50}>
+        The assignment is available online Submit a link to the landing page of
       </textarea>
 
       <br /><br />
@@ -23,7 +23,7 @@ export default async function AssignmentEditor({
               <label htmlFor="wd-points">Points</label>
             </td>
             <td>
-              <input id="wd-points" type="number" defaultValue={100} min={0} max={100} step={1} />
+              <input type="number" id="wd-points" defaultValue={100} />
             </td>
           </tr>
 
@@ -94,6 +94,7 @@ export default async function AssignmentEditor({
       </table>
 
       <br />
+      
       <button id="wd-cancel-btn">Cancel</button>
       <button id="wd-save-btn">Save</button>
     </div>

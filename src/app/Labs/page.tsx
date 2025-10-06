@@ -2,9 +2,8 @@ import Link from "next/link";
 export default function Labs() {
  return (
    <div id="wd-labs">
-     <h1>Labs</h1>
-           <p id="wd-student-name">Kiran Ulhas Kulkarni section 4</p>
-
+     <h5>Labs - Kiran Ulhas Kulkarni</h5>
+     <h6> section - 4 CS5610</h6>
      <ul>
        <li>
          <Link href="/Labs/Lab1" id="wd-lab1-link">
@@ -19,10 +18,8 @@ export default function Labs() {
            Lab 3: JavaScript Fundamentals </Link>
        </li>
        <li>
-          <a href="https://github.com/kiranUlhasKulkarni/kambaz-next-js" id="wd-github" target="_blank" rel="noopener noreferrer">
-            Kambaz Source on GitHub
-          </a>
-        </li>
+          <a href="https://github.com/kiranUlhasKulkarni/kambaz-next-js" id="wd-github-link" target="_blank">Kambaz GitHub Repository</a><br/>
+       </li>
      </ul>
    </div>
 );}
