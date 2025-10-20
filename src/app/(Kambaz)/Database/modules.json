@@ -1,0 +1,104 @@
+[
+  {
+    "_id": "M101",
+    "name": "React JS Fundamentals",
+    "description": "Introduction to React JS, components, state, and props.",
+    "course": "1234",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "JSX and Components",
+        "description": "Understanding JSX and creating React components.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "State and Props",
+        "description": "Managing state and passing props in React.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "Event Handling",
+        "description": "Handling events and user interactions in React.",
+        "module": "M101"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Node JS Backend",
+    "description": "Introduction to Node JS, server creation, and routing.",
+    "course": "2345",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "Node Setup",
+        "description": "Setting up Node environment and basic server.",
+        "module": "M102"
+      },
+      {
+        "_id": "L202",
+        "name": "Routing and APIs",
+        "description": "Creating routes and REST APIs in Node.",
+        "module": "M102"
+      },
+      {
+        "_id": "L203",
+        "name": "Database Integration",
+        "description": "Connecting Node server with MongoDB.",
+        "module": "M102"
+      }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "HTML & CSS Basics",
+    "description": "Building static web pages with HTML and CSS.",
+    "course": "3456",
+    "lessons": [
+      {
+        "_id": "L301",
+        "name": "HTML Structure",
+        "description": "Creating semantic HTML structures.",
+        "module": "M103"
+      },
+      {
+        "_id": "L302",
+        "name": "CSS Styling",
+        "description": "Applying CSS for layouts and design.",
+        "module": "M103"
+      },
+      {
+        "_id": "L303",
+        "name": "Responsive Design",
+        "description": "Making pages responsive using media queries.",
+        "module": "M103"
+      }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "CSS Advanced",
+    "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
+    "course": "4567"
+  },
+  {
+    "_id": "M105",
+    "name": "JavaScript Fundamentals",
+    "description": "Core JavaScript concepts, variables, functions, and loops.",
+    "course": "5678"
+  },
+  {
+    "_id": "M106",
+    "name": "Next JS Basics",
+    "description": "Introduction to Next.js framework and server-side rendering.",
+    "course": "6789"
+  },
+  {
+    "_id": "M107",
+    "name": "MongoDB for Developers",
+    "description": "Database design, CRUD operations, and aggregation in MongoDB.",
+    "course": "7890"
+  }
+]

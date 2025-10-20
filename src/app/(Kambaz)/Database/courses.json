@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "1234",
+    "name": "React JS",
+    "number": "CS1234",
+    "image": "/images/reactjs.jpg",
+    "description": "Learn to build dynamic, component-based web applications using React JS, managing state, props, and hooks effectively.",
+    "credits": 4
+  },
+  {
+    "_id": "2345",
+    "name": "Node JS",
+    "number": "CS2345",
+    "image": "/images/nodejs.jpg",
+    "description": "Master backend development with Node JS, creating servers, REST APIs, and connecting applications to databases.",
+    "credits": 4
+  },
+  {
+    "_id": "3456",
+    "name": "HTML",
+    "number": "CS3456",
+    "image": "/images/html.jpg",
+    "description": "Understand the structure of web pages and build semantic HTML layouts for modern web applications.",
+    "credits": 4
+  },
+  {
+    "_id": "4567",
+    "name": "CSS",
+    "number": "CS4567",
+    "image": "/images/CSS.jpg",
+    "description": "Design visually appealing and responsive web pages using advanced CSS techniques, including Flexbox, Grid, and animations.",
+    "credits": 4
+  },
+  {
+    "_id": "5678",
+    "name": "JavaScript",
+    "number": "CS5678",
+    "image": "/images/js.jpg",
+    "description": "Gain expertise in core JavaScript concepts, DOM manipulation, event handling, and creating interactive web experiences.",
+    "credits": 4
+  },
+  {
+    "_id": "6789",
+    "name": "NextJS",
+    "number": "CS6789",
+    "image": "/images/next.jpg",
+    "description": "Learn server-side rendering, static site generation, and modern web application development using the Next.js framework.",
+    "credits": 4
+  },
+  {
+    "_id": "7890",
+    "name": "MongoDB",
+    "number": "CS7890",
+    "image": "/images/mongo.jpg",
+    "description": "Master MongoDB database design, CRUD operations, aggregation, and building scalable applications with NoSQL.",
+    "credits": 4
+  }
+]
