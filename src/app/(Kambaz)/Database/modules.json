@@ -29,7 +29,7 @@
     "_id": "M102",
     "name": "Node JS Backend",
     "description": "Introduction to Node JS, server creation, and routing.",
-    "course": "2345",
+    "course": "1234",
     "lessons": [
       {
         "_id": "L201",
