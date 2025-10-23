@@ -10,7 +10,7 @@
   {
     "_id": "2345",
     "name": "Node JS",
-    "number": "CS2345",
+    "number": "CS234",
     "image": "/images/nodejs.jpg",
     "description": "Master backend development with Node JS, creating servers, REST APIs, and connecting applications to databases.",
     "credits": 4
