@@ -7,8 +7,8 @@ export default function Signup() {
       <FormControl id="wd-username" placeholder="username" className="mb-2"/>
       <FormControl id="wd-password" placeholder="password" type="password" className="mb-2"/> 
       <FormControl id="wd-password-verify" placeholder="verify password" type="password" className="mb-2"/> 
-      <Link id="wd-signin-btn" href="Profile" className="btn btn-primary w-100 mb-2"> Sign up </Link>
-      <Link id="wd-signup-btn" href="Signin" className="btn btn-primary w-100 mb-2" > Sign in </Link>
+      <Link id="wd-signin-btn" href="Profile" className="btn btn-primary w-100 mb-2"> Sign in </Link>
+      <Link id="wd-signup-btn" href="Signup" className="btn btn-primary w-100 mb-2" > Sign up </Link>
     </div>
 );}
 

@@ -114,7 +114,7 @@ const [assignment, setAssignment] = useState<any>(isNew ? {
                 <option>Online</option>
                 <option>OnSite</option>
               </FormSelect>
-              {isFaculty && assignment.submission === "Online" && (
+              {isFaculty && (
                 <>
               <FormLabel className="fw-bold">Online Entry Options</FormLabel>
               <FormCheck id="wd-text-entry" type="checkbox" label="Text Entry" disabled = {!isFaculty}/>

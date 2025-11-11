@@ -30,7 +30,7 @@ export default function Signin() {
              onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
              id="wd-password" placeholder="password" type="password" className="mb-2"/> 
       <Button onClick={signin} id="wd-signin-btn" className="w-100 mb-2" > Sign in </Button>      
-      <Link id="wd-signup-btn" href="Signin" className="btn btn-primary w-100 mb-2" > Sign up </Link>
+      <Link id="wd-signup-btn" href="Signup" className="btn btn-primary w-100 mb-2" > Sign up </Link>
     </div>
 
 );}
