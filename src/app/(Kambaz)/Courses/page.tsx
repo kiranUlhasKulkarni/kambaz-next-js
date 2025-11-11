@@ -4,7 +4,7 @@ import Link from "next/link";
 import { RootState } from "../store";
 import { CardBody, Row, Col, Card, CardImg, CardTitle, CardText, Button, FormControl } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { addNewCourse, deleteCourse, updateCourse } from "./[cid]/reducer";
+import { addNewCourse, deleteCourse, updateCourse } from "../Courses/reducer";
 import { addEnrollment, deleteEnrollment } from "../enrollmentReducer";
 
 export default function Courses() {
@@ -41,11 +41,10 @@ export default function Courses() {
 
   return (
     <div id="wd-dashboard" style={{ marginLeft: 130, marginRight: 20 }}>
-      <h1 id="wd-dashboard-title">Dashboard</h1>
+      <h1 id="wd-dashboard-title">Courses</h1>
       <hr />
       <button
         className="btn btn-primary float-end mb-3"
-        id="wd-add-new-enrollment-click"
         onClick={() => setShowAllCourses(!showAllCourses)}
       >
         {showAllCourses ? "Enrolled" : "Available"}
@@ -55,18 +54,10 @@ export default function Courses() {
         <>
           <h5>
             New Course
-            <button
-              className="btn btn-primary float-end me-2"
-              id="wd-add-new-course-click"
-              onClick={handleAddNewCourse}
-            >
+            <button className="btn btn-primary float-end me-2" onClick={handleAddNewCourse}>
               Add
             </button>
-            <button
-              className="btn btn-warning float-end me-2"
-              id="wd-update-course-click"
-              onClick={handleUpdateCourse}
-            >
+            <button className="btn btn-warning float-end me-2" onClick={handleUpdateCourse}>
               Update
             </button>
           </h5>
@@ -86,62 +77,54 @@ export default function Courses() {
         </>
       )}
 
-      <h2 id="wd-dashboard-published">
+      <h2>
         {showAllCourses ? "Published Courses" : "Enrolled Courses"} ({coursesDisplay.length})
       </h2>
       <hr />
 
-      <div id="wd-dashboard-courses">
-        <Row xs={1} md={5} className="g-4">
-          {coursesDisplay.map((course) => (
-            <Col key={course._id} className="wd-dashboard-course" style={{ width: "300px" }}>
-              <Card>
-                <CardImg variant="top" src={course.image} alt={course.name} width="100%" height={160} />
-                <CardBody>
-                  <CardTitle className="wd-dashboard-course-title text-nowrap overflow-hidden">{course.name}</CardTitle>
-                  <CardText className="wd-dashboard-course-description overflow-hidden" style={{ height: "100px" }}>
-                    {course.description}
-                  </CardText>
+      <Row xs={1} md={5} className="g-4">
+        {coursesDisplay.map((course) => (
+          <Col key={course._id} className="wd-dashboard-course" style={{ width: "300px" }}>
+            <Card>
+              <CardImg variant="top" src={course.image} alt={course.name} width="100%" height={160} />
+              <CardBody>
+                <CardTitle className="wd-dashboard-course-title text-nowrap overflow-hidden">{course.name}</CardTitle>
+                <CardText className="wd-dashboard-course-description overflow-hidden" style={{ height: "100px" }}>
+                  {course.description}
+                </CardText>
 
-                  <div className="d-flex flex-wrap gap-2 mt-2 justify-content-between">
-                    {/* Go button for enrolled courses */}
-                    {!showAllCourses && (
-                      <Link href={`/Courses/${course._id}/Home`} className="text-decoration-none">
-                        <Button variant="primary">Go</Button>
-                      </Link>
+                <div className="d-flex flex-wrap gap-2 mt-2 justify-content-between">
+                  {/* Go button for enrolled courses */}
+                  {!showAllCourses && (
+                    <Link href={`/Courses/${course._id}/Home`} className="text-decoration-none">
+                      <Button variant="primary">Go</Button>
+                    </Link>
+                  )}
+
+                  <div className="d-flex gap-2 ms-auto">
+                    {/* Enroll/Unenroll only visible on Available Courses */}
+                    {showAllCourses && (
+                      isEnrolled(course._id) ? (
+                        <Button variant="danger" onClick={() => handleUnenroll(course._id)}>Unenroll</Button>
+                      ) : (
+                        <Button variant="success" onClick={() => handleEnroll(course._id)}>Enroll</Button>
+                      )
                     )}
 
-                    {/* Enroll/Unenroll + Edit/Delete buttons */}
-                    <div className="d-flex gap-2 ms-auto">
-                      {showAllCourses && (isEnrolled(course._id) ? (
-                        <Button variant="danger" onClick={() => handleUnenroll(course._id)}>
-                          Unenroll
-                        </Button>
-                      ) : (
-                        <Button variant="success" onClick={() => handleEnroll(course._id)}>
-                          Enroll
-                        </Button>
-                      )
-                      )}
-
-                      {isFaculty && (
-                        <>
-                          <Button variant="warning" onClick={() => setCourse(course)}>
-                            Edit
-                          </Button>
-                          <Button variant="danger" onClick={() => handleDeleteCourse(course._id)}>
-                            Delete
-                          </Button>
-                        </>
-                      )}
-                    </div>
+                    {/* Faculty Edit/Delete buttons always visible */}
+                    {isFaculty && (
+                      <>
+                        <Button variant="warning" onClick={() => setCourse(course)}>Edit</Button>
+                        <Button variant="danger" onClick={() => handleDeleteCourse(course._id)}>Delete</Button>
+                      </>
+                    )}
                   </div>
-                </CardBody>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </div>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 }
