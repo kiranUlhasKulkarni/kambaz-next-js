@@ -1,0 +1,266 @@
+[
+  {
+    "_id": "M101",
+    "name": "React JS Fundamentals",
+    "description": "Introduction to React JS, components, state, and props.",
+    "course": "1234",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "JSX and Components",
+        "description": "Understanding JSX and creating React components.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "State and Props",
+        "description": "Managing state and passing props in React.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "Event Handling",
+        "description": "Handling events and user interactions in React.",
+        "module": "M101"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Node JS Backend",
+    "description": "Introduction to Node JS, server creation, and routing.",
+    "course": "1234",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "Node Setup",
+        "description": "Setting up Node environment and basic server.",
+        "module": "M102"
+      },
+      {
+        "_id": "L202",
+        "name": "Routing and APIs",
+        "description": "Creating routes and REST APIs in Node.",
+        "module": "M102"
+      },
+      {
+        "_id": "L203",
+        "name": "Database Integration",
+        "description": "Connecting Node server with MongoDB.",
+        "module": "M102"
+      }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "HTML & CSS Basics",
+    "description": "Building static web pages with HTML and CSS.",
+    "course": "2345",
+    "lessons": [
+      {
+        "_id": "L301",
+        "name": "HTML Structure",
+        "description": "Creating semantic HTML structures.",
+        "module": "M103"
+      },
+      {
+        "_id": "L302",
+        "name": "CSS Styling",
+        "description": "Applying CSS for layouts and design.",
+        "module": "M103"
+      },
+      {
+        "_id": "L303",
+        "name": "Responsive Design",
+        "description": "Making pages responsive using media queries.",
+        "module": "M103"
+      }
+    ]
+  },
+
+  {
+    "_id": "M104",
+    "name": "CSS Advanced",
+    "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
+    "course": "1234",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "CSS Flexbox",
+        "description": "Learning modern layout control using Flexbox.",
+        "module": "M104"
+      },
+      {
+        "_id": "L402",
+        "name": "CSS Grid",
+        "description": "Advanced 2D layouts using CSS Grid.",
+        "module": "M104"
+      },
+      {
+        "_id": "L403",
+        "name": "Transitions & Animations",
+        "description": "Making interactive animations with CSS.",
+        "module": "M104"
+      }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "CSS Advanced",
+    "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
+    "course": "3456",
+    "lessons": [
+      {
+        "_id": "L404",
+        "name": "CSS Flexbox",
+        "description": "Learning modern layout control using Flexbox.",
+        "module": "M104"
+      },
+      {
+        "_id": "L405",
+        "name": "CSS Grid",
+        "description": "Advanced 2D layouts using CSS Grid.",
+        "module": "M104"
+      },
+      {
+        "_id": "L406",
+        "name": "Transitions & Animations",
+        "description": "Making interactive animations with CSS.",
+        "module": "M104"
+      }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "CSS Advanced",
+    "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
+    "course": "4567",
+    "lessons": [
+      {
+        "_id": "L407",
+        "name": "CSS Flexbox",
+        "description": "Learning modern layout control using Flexbox.",
+        "module": "M104"
+      },
+      {
+        "_id": "L408",
+        "name": "CSS Grid",
+        "description": "Advanced 2D layouts using CSS Grid.",
+        "module": "M104"
+      },
+      {
+        "_id": "L409",
+        "name": "Transitions & Animations",
+        "description": "Making interactive animations with CSS.",
+        "module": "M104"
+      }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "CSS Advanced",
+    "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
+    "course": "6789",
+    "lessons": [
+      {
+        "_id": "L410",
+        "name": "CSS Flexbox",
+        "description": "Learning modern layout control using Flexbox.",
+        "module": "M104"
+      },
+      {
+        "_id": "L411",
+        "name": "CSS Grid",
+        "description": "Advanced 2D layouts using CSS Grid.",
+        "module": "M104"
+      },
+      {
+        "_id": "L412",
+        "name": "Transitions & Animations",
+        "description": "Making interactive animations with CSS.",
+        "module": "M104"
+      }
+    ]
+  },
+
+  {
+    "_id": "M105",
+    "name": "JavaScript Fundamentals",
+    "description": "Core JavaScript concepts, variables, functions, and loops.",
+    "course": "5678",
+    "lessons": [
+      {
+        "_id": "L501",
+        "name": "Variables & Data Types",
+        "description": "Using let, const, and understanding JS types.",
+        "module": "M105"
+      },
+      {
+        "_id": "L502",
+        "name": "Functions",
+        "description": "Declaring, calling, and returning values from functions.",
+        "module": "M105"
+      },
+      {
+        "_id": "L503",
+        "name": "Loops & Conditions",
+        "description": "Writing looping and branching logic in JS.",
+        "module": "M105"
+      }
+    ]
+  },
+
+  {
+    "_id": "M106",
+    "name": "Next JS Basics",
+    "description": "Introduction to Next.js framework and server-side rendering.",
+    "course": "6789",
+    "lessons": [
+      {
+        "_id": "L601",
+        "name": "Pages & Routing",
+        "description": "Creating pages and using the router.",
+        "module": "M106"
+      },
+      {
+        "_id": "L602",
+        "name": "Server-side Rendering",
+        "description": "SSR and data fetching in Next.js.",
+        "module": "M106"
+      },
+      {
+        "_id": "L603",
+        "name": "Static Generation",
+        "description": "Using SSG for performance and SEO.",
+        "module": "M106"
+      }
+    ]
+  },
+
+  {
+    "_id": "M107",
+    "name": "MongoDB for Developers",
+    "description": "Database design, CRUD operations, and aggregation in MongoDB.",
+    "course": "7890",
+    "lessons": [
+      {
+        "_id": "L701",
+        "name": "MongoDB Setup",
+        "description": "Installing & running MongoDB locally.",
+        "module": "M107"
+      },
+      {
+        "_id": "L702",
+        "name": "CRUD Operations",
+        "description": "Insert, update, delete, and query documents.",
+        "module": "M107"
+      },
+      {
+        "_id": "L703",
+        "name": "Aggregation Pipeline",
+        "description": "Data processing using aggregation framework.",
+        "module": "M107"
+      }
+    ]
+  }
+]
