@@ -10,50 +10,50 @@ import { usePathname } from "next/navigation";
 import { RootState } from "./store";
 import { text } from "stream/consumers";
 export default function KambazNavigation() {
-  const pathname = usePathname();
-   const { currentUser } = useSelector((state: RootState) => state.accountReducer);
+    const pathname = usePathname();
+    const { currentUser } = useSelector((state: RootState) => state.accountReducer);
 
     const links = [
-    { label: "Dashboard", path: "/Dashboard", icon: AiOutlineDashboard },
-    { label: "Courses",   path: "/Courses", icon: LiaBookSolid },
-    { label: "Calendar",  path: "/Calendar",  icon: IoCalendarOutline },
-    { label: "Inbox",     path: "/Inbox",     icon: FaInbox },
-  ];
+        { label: "Dashboard", path: "/Dashboard", icon: AiOutlineDashboard },
+        { label: "Courses",   path: "/Courses", icon: LiaBookSolid },
+        { label: "Calendar",  path: "/Calendar",  icon: IoCalendarOutline },
+        { label: "Inbox",     path: "/Inbox",     icon: FaInbox },
+    ];
     const linkss = [{ label: "Labs",      path: "/Labs",             icon: LiaCogSolid },];
 
-  return (
-    <ListGroup className="rounded-0 position-fixed bottom-0 top-0 d-none d-md-block bg-black z-2" style={{ width: 110 }}
-              id="wd-kambaz-navigation">
-     <ListGroupItem className="bg-black border-0 text-center" as="a"
-              target="_blank" href="https://www.northeastern.edu/" id="wd-neu-link">
-       <img src="/images/NEU.png" width="75px" alt="Northeastern University" />
-     </ListGroupItem>
-           <ListGroupItem as={Link} href="/Account"
-        className={`text-center border-0 bg-black
+    return (
+        <ListGroup className="rounded-0 position-fixed bottom-0 top-0 d-none d-md-block bg-black z-2" style={{ width: 110 }}
+                   id="wd-kambaz-navigation">
+            <ListGroupItem className="bg-black border-0 text-center" as="a"
+                           target="_blank" href="https://www.northeastern.edu/" id="wd-neu-link">
+                <img src="/images/NEU.png" width="75px" alt="Northeastern University" />
+            </ListGroupItem>
+            <ListGroupItem as={Link} href="/Account"
+                           className={`text-center border-0 bg-black
             ${pathname.includes("Account") ? "bg-white text-danger" : "bg-black text-white"}`}>
-        <FaRegCircleUser
-          className={`fs-1 ${pathname.includes("Account") ? "text-danger" : "text-white"}`} />
-        <br />
-        Account
-      </ListGroupItem>
-      {currentUser &&  (
-      links.map((link) => (
-        <ListGroupItem key={link.path} as={Link} href={link.path}
-          className={`bg-black text-center border-0
+                <FaRegCircleUser
+                    className={`fs-1 ${pathname.includes("Account") ? "text-danger" : "text-white"}`} />
+                <br />
+                Account
+            </ListGroupItem>
+            {currentUser &&  (
+                links.map((link) => (
+                    <ListGroupItem key={link.path} as={Link} href={link.path}
+                                   className={`bg-black text-center border-0
               ${pathname.includes(link.label) ? "text-danger bg-white" : "text-white bg-black"}`}>
-          {link.icon({ className: "fs-1 text-danger"})}
-          <br />
-          {link.label}
-        </ListGroupItem>
-      )))}
-      {linkss.map((link) => (
-        <ListGroupItem key={link.path} as={Link} href={link.path}
-          className={`bg-black text-center border-0
+                        {link.icon({ className: "fs-1 text-danger"})}
+                        <br />
+                        {link.label}
+                    </ListGroupItem>
+                )))}
+            {linkss.map((link) => (
+                <ListGroupItem key={link.path} as={Link} href={link.path}
+                               className={`bg-black text-center border-0
               ${pathname.includes(link.label) ? "text-danger bg-white" : "text-white bg-black"}`}>
-          {link.icon({ className: "fs-1 text-danger"})}
-          <br />
-          {link.label}
-        </ListGroupItem>
-      ))}
-      </ListGroup>
-);}
+                    {link.icon({ className: "fs-1 text-danger"})}
+                    <br />
+                    {link.label}
+                </ListGroupItem>
+            ))}
+        </ListGroup>
+    );}
