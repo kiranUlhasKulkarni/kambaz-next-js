@@ -30,6 +30,11 @@ export default function Labs() {
                     <a href="https://github.com/kiranUlhasKulkarni/kambaz-next-js" id="wd-github-link" target="_blank">Kambaz
                         GitHub Repository</a><br/>
                 </li>
+                <li>
+                    <a href="https://github.com/kiranUlhasKulkarni/kambaz-node-server-app" id="wd-github-link" target="_blank">Kambaz
+                        GitHub node-server-app Repository</a><br/>
+                </li>
+
             </ul>
         </div>
     );
