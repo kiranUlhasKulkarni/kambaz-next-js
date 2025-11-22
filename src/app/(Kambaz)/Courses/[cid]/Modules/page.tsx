@@ -54,8 +54,8 @@ export default function Modules() {
   return (
     <div className="p-4">
       {isFaculty && (
-      <ModulesControls setModuleName={setModuleName} moduleName={moduleName} 
-      addModule={() => {onCreateModuleForCourse}}/>)}
+      <ModulesControls setModuleName={setModuleName} moduleName={moduleName}
+                       addModule={onCreateModuleForCourse}/>)}
           <br /><br /><br /><br />
       <ListGroup className="rounded-0" id="wd-modules">
         {modules
