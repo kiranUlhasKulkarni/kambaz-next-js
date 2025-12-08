@@ -19,20 +19,23 @@ export default function Modules() {
   const { modules } = useSelector((state: RootState) => state.modulesReducer);
   const dispatch = useDispatch();
   const onUpdateModule = async (module: any) => {
-    await client.updateModule(module);
+    await client.updateModule(cid as string, module);
     const newModules = modules.map((m: any) => m._id === module._id ? module : m );
     dispatch(setModules(newModules));
   };
 
   const fetchModules = async () => {
-    const modules = await client.findModulesForCourse(cid as string);
-    dispatch(setModules(modules));
+    console.log("Fetching modules for course:", cid);
+  const modules = await client.findModulesForCourse(cid as string);
+  console.log("Modules received:", modules);
+  console.log("Number of modules:", modules?.length);
+  dispatch(setModules(modules));
   };
   useEffect(() => {
     fetchModules();
   }, []);
   const onRemoveModule = async (moduleId: string) => {
-    await client.deleteModule(moduleId);
+    await client.deleteModule(cid as string, moduleId);
     dispatch(setModules(modules.filter((m: any) => m._id !== moduleId)));
   };
 
@@ -54,8 +57,8 @@ export default function Modules() {
   return (
     <div className="p-4">
       {isFaculty && (
-      <ModulesControls setModuleName={setModuleName} moduleName={moduleName}
-                       addModule={onCreateModuleForCourse}/>)}
+      <ModulesControls setModuleName={setModuleName} moduleName={moduleName} 
+      addModule={onCreateModuleForCourse}/>)}
           <br /><br /><br /><br />
       <ListGroup className="rounded-0" id="wd-modules">
         {modules

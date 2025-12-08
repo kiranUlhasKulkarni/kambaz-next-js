@@ -77,7 +77,6 @@
       }
     ]
   },
-
   {
     "_id": "M104",
     "name": "CSS Advanced",
@@ -105,7 +104,7 @@
     ]
   },
   {
-    "_id": "M104",
+    "_id": "M301",
     "name": "CSS Advanced",
     "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
     "course": "3456",
@@ -114,24 +113,24 @@
         "_id": "L404",
         "name": "CSS Flexbox",
         "description": "Learning modern layout control using Flexbox.",
-        "module": "M104"
+        "module": "M301"
       },
       {
         "_id": "L405",
         "name": "CSS Grid",
         "description": "Advanced 2D layouts using CSS Grid.",
-        "module": "M104"
+        "module": "M301"
       },
       {
         "_id": "L406",
         "name": "Transitions & Animations",
         "description": "Making interactive animations with CSS.",
-        "module": "M104"
+        "module": "M301"
       }
     ]
   },
   {
-    "_id": "M104",
+    "_id": "M401",
     "name": "CSS Advanced",
     "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
     "course": "4567",
@@ -140,24 +139,24 @@
         "_id": "L407",
         "name": "CSS Flexbox",
         "description": "Learning modern layout control using Flexbox.",
-        "module": "M104"
+        "module": "M401"
       },
       {
         "_id": "L408",
         "name": "CSS Grid",
         "description": "Advanced 2D layouts using CSS Grid.",
-        "module": "M104"
+        "module": "M401"
       },
       {
         "_id": "L409",
         "name": "Transitions & Animations",
         "description": "Making interactive animations with CSS.",
-        "module": "M104"
+        "module": "M401"
       }
     ]
   },
   {
-    "_id": "M104",
+    "_id": "M601",
     "name": "CSS Advanced",
     "description": "Advanced CSS topics including Flexbox, Grid, and animations.",
     "course": "6789",
@@ -166,23 +165,22 @@
         "_id": "L410",
         "name": "CSS Flexbox",
         "description": "Learning modern layout control using Flexbox.",
-        "module": "M104"
+        "module": "M601"
       },
       {
         "_id": "L411",
         "name": "CSS Grid",
         "description": "Advanced 2D layouts using CSS Grid.",
-        "module": "M104"
+        "module": "M601"
       },
       {
         "_id": "L412",
         "name": "Transitions & Animations",
         "description": "Making interactive animations with CSS.",
-        "module": "M104"
+        "module": "M601"
       }
     ]
   },
-
   {
     "_id": "M105",
     "name": "JavaScript Fundamentals",
@@ -209,7 +207,6 @@
       }
     ]
   },
-
   {
     "_id": "M106",
     "name": "Next JS Basics",
@@ -236,7 +233,6 @@
       }
     ]
   },
-
   {
     "_id": "M107",
     "name": "MongoDB for Developers",
