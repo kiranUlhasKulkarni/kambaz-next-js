@@ -130,7 +130,7 @@ export default function Dashboard() {
         <Card>
           {!showAllCourses && (<>
           <Link href={`/Courses/${course._id}/Home`} className="wd-dashboard-course-link text-decoration-none text-dark">
-            <CardImg variant="top" src={course.image} alt={course.name} width="100%" height={160} />
+            <CardImg variant="top" src="/images/reactjs.jpg" alt="React JS" width="100%" height={160} />
             <CardBody>
               <CardTitle className="wd-dashboard-course-title text-nowrap overflow-hidden">{course.name}</CardTitle>
               <CardText  className="wd-dashboard-course-description overflow-hidden" style={{ height: "100px" }}>
@@ -159,7 +159,7 @@ export default function Dashboard() {
           </>)}
           {showAllCourses && (
             <>
-            <CardImg variant="top" src={course.image} alt={course.name} width="100%" height={160} />
+            <CardImg variant="top" src="/images/reactjs.jpg" alt="React JS" width="100%" height={160} />
             <CardBody>
               <CardTitle className="wd-dashboard-course-title text-nowrap overflow-hidden">{course.name}</CardTitle>
               <CardText  className="wd-dashboard-course-description overflow-hidden" style={{ height: "100px" }}>
