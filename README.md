@@ -61,15 +61,6 @@ Kambaz is a feature-rich LMS that replicates core Canvas functionality. It suppo
 - Faculty can create and manage assignments with due dates, point values, and submission groups
 - Students can view assignment details within enrolled courses
 
-### Quiz System
-- Faculty can create quizzes with:
-  - **Single Choice** questions
-  - **Multiple Choice** questions
-  - **Fill-in-the-Blank** questions (supports multiple correct blanks per question)
-- Quizzes support publish/unpublish toggle
-- Students can take quizzes with auto-grading
-- Attempt tracking — each submission is stored with student answers and scores
-- Multiple attempt support (configurable per quiz)
 
 ### Enrollment
 - Many-to-many relationship between users and courses
